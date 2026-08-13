@@ -775,7 +775,7 @@ button {
   /* cursor: grab; */
   user-select: none;
   -webkit-user-select: none;
-  touch-action: pan-y;
+  touch-action: pan-x pan-y;
 }
 
 .brand-track.dragging,
@@ -1003,6 +1003,12 @@ button {
 .reels-thumb.is-playing .thumb-play-button {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+@media (hover: none) {
+  .thumb-play-button {
+    display: none;
+  }
 }
 
 .thumb-overlay {
